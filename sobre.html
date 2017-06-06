@@ -1,0 +1,110 @@
+<DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Projeto Integrador</title>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="Public/CSS/normalize.css">
+      <link rel="stylesheet" type="text/css" href="Public/CSS/materialize/css/materialize.css">
+      <link rel="stylesheet" type="text/css" href="Public/CSS/estilos.css">
+   </head>
+   <body>
+      <!--Menu-->
+      <header>
+         <div class="Menu1">
+         <div class="navbar-fixed">
+            <nav class="nav-extended">
+               <div class="nav-wrapper container">
+                  <a href="index.html" class="brand-logo" id="logo">T</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                  </a>
+
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                     <li class="active"><a href="index.html">Home</a></li>
+                     <li><a href="sobre.html">Sobre</a></li>
+                     <li><a href="portfolio.html">Projetos</a></li>
+                     <li><a href="hobbies.html">Hobbies</a></li>
+                     <li><a href="contato.html">Contato</a></li>
+                  </ul>
+
+                  <ul class="side-nav" id="mobile-demo">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="sobre.html">Sobre</a></li>
+                     <li><a href="portfolio.html">Projetos</a></li>
+                     <li><a href="hobbies.html">Hobbies</a></li>
+                     <li><a href="contato.html">Contato</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+      </header>
+
+      <!-- Carrousel -->
+
+      <div class="carousel blue-grey lighten-5 z-depth-5">
+      <a class="carousel-item" href="#one!"><img src="Public/Imagens/foto11.jpg" alt="Aqui tem uma imagem"></a>
+      <a class="carousel-item" href="#two!"><img src="Public/Imagens/foto5.jpg" alt="Aqui tem uma imagem"></a>
+      <a class="carousel-item" href="#three!"><img src="Public/Imagens/foto4.jpg" alt="Aqui tem uma imagem"></a>
+      <a class="carousel-item" href="#four!"><img src="Public/Imagens/foto6.jpg" alt="Aqui tem uma imagem"></a>
+      </div>
+
+      <!--Começo do conteúdo -->
+
+      <section id="Sobre" class=" blue-grey lighten-5">
+      <h1 class="light-blue-text accent-3 text-darken-4">Sobre mim</h1>
+      <p class="light-blue-text accent-3 text-darken-4">Olá, sou Thierry Iago Alves Paixão e tenho 17 anos. Sou estudante no Centro Universitário SENAC-SP, atualmente não trabalho e resido no bairro Jardim das Fontes(SP). <br></br>
+      Gosto de diversas coisas, como esportes, várias séries, principalmente de super herois, claro, Game of Thrones, e de jogar online. A - M - O comer, minha maior paixão da vida (é a melhor coisa né, por favor haha).<br></br> 
+      Sou muito responsável com tudo (quase tudo), atrasos me irritam, sou pavio curto mas tô trabalhando pra melhorar nessa parte ( me irrito por quase tudo ), sou bastante amigável e extrovertido, tento ao máximo ser uma pessoa boa para aqueles que me rodeiam, tento ajudar quando preciso e me mostrar sempre ao lado das pessoas a qual eu gosto.<br></br> 
+      Sempre fui apaixonado por música, seja clássica, seja Rock, o estilo que for, música é a arte da vida, por mais que existam muitos gêneros musicais, os que eu mais gosto são Rock, Eletronica, Pop, Clássico, as vezes um Jazz tocado no Saxofone, Rap, Black, sou bem eclético, mas meu amor mesmo fica entre música Clássica, Eletrônica e Rock.<br></br>
+      Outra coisa que sou apaixonado é por galáxias e o paradóxo de existências fora da terra, é algo que me fascina. Pensar que existem outras formas de vida, que não estamos sozinhos nesse universo, nessa galáxia, é algo extraordinário. E sim, eu penso que não estamos sozinhos nisso tudo aqui, porque cientistas afirmam que existem cerca de 100 bilhões de galáxias, 17 bilhões de planetas apenas na Via Lactea (que é nossa galáxia) isso porque nossos telescópios ainda não alcançam outras, porque devem haver muito mais. Esses assuntos que envolvem mais criatividade e imaginação são os meus favoritos, porque tudo o que você pode imaginar é real, a imaginação é o princípio da criação. <br></p>
+      </section>
+
+      <ul id=menu>
+         <div class="fixed-action-btn">
+            <a href="javascript:toTop();" class="btn-floating btn-large black">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </a>
+         </div>
+      </ul>
+
+      <!-- Rodapé -->
+      
+      <footer>
+         <p>Desenvolvido por Thierry Iago Alves Paixão - Tecnologia em Sistemas para Internet - Copyright &copy</p>
+      </footer>
+            
+      <!-- JS MATERIALIZE -->
+
+      
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      
+      <script src="Public/CSS/materialize/js/materialize.js"></script>
+
+      <!--Menu Mobile-->
+      <script type="text/javascript">
+
+         $(".button-collapse").sideNav();
+         
+      </script>
+
+      <script type="text/javascript">
+         $(document).ready(function(){
+               $(".carousel").carousel();
+             });
+      </script>
+
+      <script src="./menufixo.js"></script>
+      
+      <script>
+         function toTop(){
+         $('html, body').animate({
+         scrollTop: 0
+         }, 500, 'easeInOutCirc');
+         } 
+      </script>
+   </body>
+</html>

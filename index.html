@@ -1,0 +1,143 @@
+<DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Projeto Integrador</title>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700|Pacifico' rel='stylesheet' type='text/css'>
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="Public/CSS/normalize.css">
+      <link rel="stylesheet" type="text/css" href="Public/CSS/materialize/css/materialize.css">
+      <link rel="stylesheet" type="text/css" href="Public/CSS/estilos.css">
+      <script type="text/javascript">
+         <!--
+         
+         var posicao = 0;
+         var mensagem = "Olá, eu sou Thierry. <br>Bem vindo ao meu site!"; 
+         function rola() {
+           document.getElementById("div1").innerHTML = mensagem.substring(posicao,mensagem,length);
+           posicao++;
+           document.getElementById("div1").innerHTML = mensagem.substring(posicao,mensagem,length);
+           posicao++;
+           if (posicao == mensagem.length) {
+         posicao = 0;
+           }
+           setTimeout("rola()", 135);
+         }
+         
+         //-->
+      </script>
+   </head>
+   <body onload="rola()">
+
+      <!--Menu-->
+
+      <header>
+         <div class="container">
+         <div class="row" id="script">
+         <div class="Menu1">
+         <div class="navbar-fixed">
+         <nav class="nav-extended">
+            <div class="nav-wrapper">
+               <a href="index.html" class="brand-logo" id="logo">T</a>
+               <a href="#" data-activates="mobile-demo" class="button-collapse">
+               <i class="fa fa-bars" aria-hidden="true"></i>
+               </a>
+               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="sobre.html">Sobre</a></li>
+                  <li><a href="portfolio.html">Projetos</a></li>
+                  <li><a href="hobbies.html">Hobbies</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+               </ul>
+               <ul class="side-nav" id="mobile-demo">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="sobre.html">Sobre</a></li>
+                  <li><a href="portfolio.html">Projetos</a></li>
+                  <li><a href="hobbies.html">Hobbies</a></li>
+                  <li><a href="contato.html">Contato</a></li>
+               </ul>
+            </div>
+         </nav>
+         </div>
+         </div>
+  
+
+         <!-- Efeito JS na tela -->
+
+         <div id="div1">  
+            <br></br>
+         </div>
+         </div>
+         </div>
+      </header>
+
+      <!--Começo do conteúdo -->
+      <section id="sobre" class="blue-grey lighten-5">
+         <div class="container">
+            <h1>Sobre mim</h1>
+            <p>Olá, sou Thierry Iago, tenho 17 anos, e comecei a gostar dessa área à 2 anos quando vi meu tio programando pela primeira vez, aqui você irá me conhecer melhor e saberá algumas coisas sobre mim, venha descobrir.</p>
+            <a href="sobre.html" class="botao">VER MAIS</a>
+         </div>
+      </section>
+      <section id="projetos" class="blue-grey lighten-5">
+         <h1>Portfólio</h1>
+         <div class="container">
+            <p>Aqui encontrará alguns de meus trabalhos no Photoshop, alguns códigos e alguns exercícios de Algoritmo, venha ver!</p>
+            <a href="portfolio.html" class="botao">VER MAIS</a>
+         </div>
+      </section>
+      <section id="hobbies" class="blue-grey lighten-5">
+         <h1>Hobbies</h1>
+         <div class="container">
+            <p>Aqui você verá e me conhecerá um pouco melhor, irá ver as coisas que gosto de fazer, o que gosto de jogar, assistir e por aí vai, venha ver.</p>
+            <a href="hobbies.html" class="botao">VER MAIS</a>
+         </div>
+      </section>
+      <section id="contato" class="blue-grey lighten-5">
+         <h1>Contato</h1>
+         <div class="container">
+            <p>Aqui você poderá me contatar, achar minhas redes sociais e me enviar uma mensagem. Escreva para mim.</p>
+            <a href="contato.html" class="botao">VER MAIS</a>
+         </div>
+      </section>
+
+      <!-- Botão -->
+
+      <ul id=menu>
+         <div class="fixed-action-btn">
+            <a href="javascript:toTop();" class="btn-floating btn-large black">
+            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </a>
+         </div>
+      </ul>
+
+      <!-- Rodapé -->
+      
+      <footer>
+         <p>Desenvolvido por Thierry Iago Alves Paixão - Tecnologia em Sistemas para Internet - Copyright &copy</p>
+      </footer>
+      
+      <!-- JS MATERIALIZE -->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="Public/CSS/materialize/js/materialize.js"></script>
+
+      <!-- JS do botão -->
+      <script src="./menufixo.js"></script>
+      <script>
+         function toTop(){
+         $('html, body').animate({
+         scrollTop: 0
+         }, 500, 'easeInOutCirc');
+         }
+         
+      </script>
+      
+      <!-- Menu Mobile -->
+      <script type="text/javascript">
+         $(".button-collapse").sideNav();
+         
+      </script>
+   </body>
+</html>
